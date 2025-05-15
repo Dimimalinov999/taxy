@@ -16,6 +16,9 @@ clean:
 install:
 	cp ./taxy /usr/local/bin
 
+remove:
+	rm -f /usr/local/bin/taxy
+
 # Builder uses this target to run your application.
 run:
 	./taxy
