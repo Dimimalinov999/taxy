@@ -42,6 +42,15 @@ $ taxy 16 10000
 You owe: 1600
 You are left with: 8400
 ```
+## Uninstall
+To uninstall, run
+```
+make remove
+```
+This command will run
+```
+rm -f /usr/local/bin/taxy
+```
 # TODO
 ### - Add more modes than percentage (-p), such as Average (-a) where it calculates an average of multiple percentages.
 ### - Making taxy-gtk or taxy-qt (in the future, not now.)
