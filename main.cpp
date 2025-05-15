@@ -22,27 +22,38 @@
 #include <cstdlib>
 #include <cstring>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { // init the command argument system
     if (argc > 1) {
-        if (strcmp(argv[1], "-h") == 0) {
+        if (strcmp(argv[1], "-h") == 0) { // checks for the -h argument
             std::cout << "Syntax: \n" << std::endl;
             std::cout << "taxy [Tax amount without a %] [Annual income] \n" << std::endl;
             std::cout << "Eg. taxi 10 12000 \n" << std::endl;
         }
-        if (strcmp(argv[1], "-i") == 0) {
-
-        } else {
-            double taxAmount = std::stod(argv[1]);
-            double annualIncome = std::stod(argv[2]);
+        if (strcmp(argv[1], "-i") == 0) { // starts interactive mode
+            double taxAmount;
+            double annualIncome; // inits the 2 doubles needed
+            std::cout << "Specify tax percentage (without the % sign): ";
+            std::cin >> taxAmount;
+            std::cout << "Specify annual income: ";
+            std::cin >> annualIncome;
 
             double result = (taxAmount / 100.0) * annualIncome;
             double left = annualIncome - result;
 
             std::cout << "You owe: " << result << std::endl;
-            std::cout << "You are left with: " << left << std::endl;
+            std::cout << "You are left with: " << left << std::endl; // prints final values
+        } if (strcmp(argv[1], "-p") == 0) { // checks for the -p argument
+            double taxAmount = std::stod(argv[2]);
+            double annualIncome = std::stod(argv[3]); // init doubles
+
+            double result = (taxAmount / 100.0) * annualIncome;
+            double left = annualIncome - result;
+
+            std::cout << "You owe: " << result << std::endl;
+            std::cout << "You are left with: " << left << std::endl; // result
         }
     } else {
-        std::cout << "No arguments given!\n";
+        std::cout << "No arguments given!\n"; // stops from no args
     }
     return EXIT_SUCCESS;
 }
