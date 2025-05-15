@@ -17,6 +17,13 @@ make install
 ```
 Make sure to run make first.
 ## Use
+### Interactive mode
+Use
+```
+taxy -i
+```
+to enter interactive mode. The rest is self explanitory.
+### CLI mode
 Just like a regular 'ol argument only cli program.
 <br>
 Syntax:
