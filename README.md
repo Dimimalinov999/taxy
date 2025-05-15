@@ -10,15 +10,12 @@ or since its currently only 1 file
 ```
 g++ ./main.cpp -o ./taxy
 ```
-If you wish to install it (most likely to /usr/bin)
+If you wish to install it (most likely to /usr/local/bin, since /usr/bin is reserverd for the system package manager)
 You can eather (run the following command as root/sudo)
 ```
 make install
 ```
-Or if that doesn't work (run the next command as root aswell)
-```
-cp ./taxy /usr/bin/taxy
-```
+Make sure to run make first.
 ## Use
 Just like a regular 'ol argument only cli program.
 <br>
