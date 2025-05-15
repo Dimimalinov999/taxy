@@ -43,5 +43,5 @@ You owe: 1600
 You are left with: 8400
 ```
 # TODO
-### -Add more modes than percentage (-p), such as Average (-a) where it calculates an average of multiple percentages.
-### -Making taxy-gtk or taxy-qt (in the future, not now.)
+### - Add more modes than percentage (-p), such as Average (-a) where it calculates an average of multiple percentages.
+### - Making taxy-gtk or taxy-qt (in the future, not now.)
