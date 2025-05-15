@@ -22,7 +22,7 @@ cp ./taxy /usr/bin/taxy
 ## Use
 Just like a regular 'ol argument only cli program.
 <br>
-**Syntax**
+Syntax:
 ```
 taxy [tax percentage without the % sign] [annual revenue]
 ```
