@@ -21,6 +21,9 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
+#include <string>
+#include <vector>
+#include <sstream>
 
 int main(int argc, char* argv[]) { // init the command argument system
     if (argc > 1) {
